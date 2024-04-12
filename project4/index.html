@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+  }
+  html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+  #container{
+    height: 60vh;
+    width: 30vw;
+    background-color: grey;
+    margin: 30px auto;
+    border-radius: 8px;
+  }
+  h1, p{
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+  #heading{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 40px;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+  }
+  input{
+    width: 250px;
+    height: 35px;
+    border-radius: 7px;
+    padding: 6px;
+    margin: 25px 0;
+    background-color: black;
+    border: none;
+    font-size: 1.1em;
+  }
+  button{
+    height: 35px;
+    width: 130px;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+  }
+</style>
+<body>
+  <h1>Number Guessing Game</h1>
+  <div id="container">
+    <p>Try and guess a random number between 1 and 100</p>
+    <p>You have 10 attempts to guess the right number</p>
+    <div id="heading">Guess a number</div>
+    <form>
+      <label for="guess-field"></label>
+      <input type="text" id="user-guess" placeholder="Enter you guess">
+      <button type="submit" id="submit">Enter Guess</button>
+      <p class="check-num"></p>
+    </form>
+    <div id="result">
+      <p>Previous guesses: <span class="guesses"></span></p>
+      <p>Guesses remaining: <span class="last-result">10</span></p>
+      <p class="low-or-high"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
