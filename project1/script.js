@@ -32,7 +32,7 @@ colorButtons.forEach((button) => {
   });
 });
 
-//--------------We can use if-else statements instead of switch case statements Both of these statements work ots my choice what I want to use.
+//--------------We can use if-else statements instead of switch case statements Both of these statements work it is your choice what I want to use.
 
 
 // ------------------------------------------------------------------------------------------------ \\
