@@ -10,18 +10,22 @@ const randomColor = function () {
 let intervalColor;
 
 const startChangingColor = function () {
-  const colorBG = function () {
-    document.querySelector("body").style.backgroundColor = randomColor()
+  if (!intervalColor) {
+    intervalColor = setInterval(colorBg, 1000);
   }
-  intervalColor = setInterval(colorBG, 1000)
+
+  function colorBg () {
+    document.querySelector("body").style.backgroundColor = randomColor();
+  };
 };
 
 const stopChangingColor = function () {
-  clearInterval(intervalColor)
-}
+  clearInterval(intervalColor);
+  intervalColor = null;
+};
 
 const startButton = document.querySelector("#start");
 startButton.addEventListener("click", startChangingColor);
 
-const stopButton = document.querySelector("#stop")
-stopButton.addEventListener("click", stopChangingColor)
+const stopButton = document.querySelector("#stop");
+stopButton.addEventListener("click", stopChangingColor);
