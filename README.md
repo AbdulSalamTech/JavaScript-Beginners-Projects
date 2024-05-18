@@ -1,5 +1,5 @@
 # JavaScript-Projects
-These are some of my beginner level projects of JavaScript
+These are some of mine beginner level projects of JavaScript
 
 ## JavaScript Solution Code (Project 1)
 ``` JavaScript
